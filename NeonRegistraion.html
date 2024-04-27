@@ -23,7 +23,7 @@
         <label for="mothersName"><strong>Mother's Name :</strong></label>
         <input type="text" id="mothersName" name="mothersName" required/><br/>
         <label for="birthDate"><Strong>Birth Date :</Strong></label>
-        <input type="date" id="birthDate" name="birthDate" required/>
+        <input type="date" id="birthDate" name="birthDate" max="2010-1-1" required/>
         <label for="gender"><strong>Gender :<strong/></label>
         <input type="radio" id="male" name="gender" value="Male"/>
         <label for="male"><strong>Male</strong></label>
@@ -93,8 +93,15 @@ and true to the best of my knowledge and based on records.<strong></blockquote><
     <p style="text-align: right;"><strong>Authorized Signature</strong></p>
     <section/>
     <h1></h1>
-    <div class="submitButton" style="text-align: center;">
+    <form action="" id="submitButton" style="text-align: center;">
         <input type="submit" value="submit"/>
-    <div/>
+    </form>
+    <script>
+      let loginForm = document.getElementById("submitButton");
+      loginForm.addEventListener("submit", (e) =>{
+        console.log("Successfully Submitted")
+      }
+    );
+    </script>
   </body>
 </html>
