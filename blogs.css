@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.fit{
+     max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+}
+a:link {
+      text-decoration: none;
+    }
+a:visited {
+      text-decoration: none;
+    }
+a:hover {
+      text-decoration: none;
+    }
+a:active {
+      text-decoration: none;
+        }
